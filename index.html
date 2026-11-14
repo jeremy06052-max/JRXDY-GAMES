@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JRXDY GAMES — a clean home for browser games.">
+  <title>JRXDY GAMES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="JRXDY Games home"><span>JRXDY</span> GAMES</a>
+    <div class="status"><i></i> READY TO PLAY</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT BREAK STARTS HERE</p>
+      <h1>Find your <span>next game.</span></h1>
+      <p class="sub">A simple collection of browser games, all in one place.</p>
+      <label class="search">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search games..." autocomplete="off">
+        <kbd>⌘ K</kbd>
+      </label>
+    </section>
+
+    <section class="library">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">THE LIBRARY</p>
+          <h2>Browse games</h2>
+        </div>
+        <span id="gameCount" class="count">0 GAMES</span>
+      </div>
+
+      <nav class="filters" aria-label="Game categories">
+        <button class="filter active" data-category="All">All games</button>
+        <button class="filter" data-category="Arcade">Arcade</button>
+        <button class="filter" data-category="Puzzle">Puzzle</button>
+        <button class="filter" data-category="Sports">Sports</button>
+        <button class="filter" data-category="Other">Other</button>
+      </nav>
+
+      <div id="gameGrid" class="game-grid" aria-live="polite"></div>
+      <p id="emptyState" class="empty" hidden>No games found. Try another search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="brand small"><span>JRXDY</span> GAMES</span>
+    <span>Made for the love of games.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
